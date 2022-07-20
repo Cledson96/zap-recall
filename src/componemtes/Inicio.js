@@ -14,8 +14,8 @@ function Inicio() {
 function desabilita(){
     document.querySelector(".inicio").classList.add("remove")
     document.querySelector(".inicio").classList.remove("add")
-    document.querySelector(".Perguntas").classList.remove("remove")
-    document.querySelector(".Perguntas").classList.add("add")
+    document.querySelector(".perguntas").classList.remove("remove")
+    document.querySelector(".perguntas").classList.add("add")
 }           
 
 export default Inicio;
