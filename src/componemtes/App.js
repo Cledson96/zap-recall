@@ -1,8 +1,10 @@
-
+import Inicio from './Inicio';
+import Perguntas from './Perguntas'
 function App() {
   return (
     <>
-    "ola"
+      <Inicio />
+      <Perguntas />
     </>
   );
 }
