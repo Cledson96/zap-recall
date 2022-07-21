@@ -5,15 +5,6 @@ body {
   background-color: #FB6B6B;
 }
 
-.remove {
-  display: none;
-}
-
-.add {
-  
-  display: flex;
-}
-
 h1 {
   font-family: 'Righteous';
   font-style: normal;
@@ -26,6 +17,7 @@ h1 {
 
 /* Tela de inicio */
 .inicio {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -57,8 +49,8 @@ h1 {
 
 /* Tela de Perguntas */
 .pergunta {
-  padding:15px;
   display: flex;
+  padding:15px;
   align-items: center;
   justify-content: space-between;
   width: 300px;
@@ -78,8 +70,14 @@ h1 {
   width: 20px;
   height: 23px;
 }
+.perguntaVirada{
+  height: 80px;
+  width: 80px;
+  background-color: black;
+}
 
 .perguntas {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
