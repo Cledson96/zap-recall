@@ -1,13 +1,16 @@
-import Logo from './img/logo.png'
+import Logo from '../img/logo.png'
+import  "./style.css";
 
 function Inicio(props) {
+   const {tela2} = props;
+   
     return (
         <>
             <div className='inicio'>
                 <img src={Logo} />
                 <h1>ZapRecall</h1>
                 <button onClick={() => {
-                    props.tela2()
+                   tela2()
                 }}>Iniciar Recall!</button>
             </div>
         </>
