@@ -1,5 +1,5 @@
 export default function ImagensConcluidas(props) {
-    const {simbolos} = props
+    const {simbolos} = props;
     
     return (
         <>

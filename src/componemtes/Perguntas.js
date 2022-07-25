@@ -8,21 +8,26 @@ import AddPerguntas from './AddPerguntas/AddPerguntas';
 function Perguntas(props) {
 
     const {
+        meta,
+        tela,
+        setTela,
         deck
     } = props;
 
-    const [referencia, setreferencia] = React.useState([]);
+   
     const [concluido, setconcluido] = React.useState(0);
     const [resultado, setresultado] = React.useState([]);
     const [simbolos, setsimbolos] = React.useState([]);
+    const [referencia, setreferencia] = React.useState([]);
     const [img_resultado, setimg_resultado] = React.useState([]);
+    const [botao, setbotao] = React.useState([]);
 
     function aumentarconcluido() {
         setconcluido(concluido + 1);
     }
 
     let pergunta = deck.length;
-    let renderizar = deck.map(function (value, index) { return (<AddPerguntas key={index} referencia={referencia} img_resultado={img_resultado} resultado={resultado} simbolos={simbolos} deck={deck} concluido={concluido} setconcluido={aumentarconcluido} index={index} perguntaa={value.pergunta} resposta={value.resposta} />) })
+    let renderizar = deck.map(function (value, index) { return (<AddPerguntas referencia={referencia} meta={meta} tela={tela} setTela={setTela} botao={botao} key={index} img_resultado={img_resultado} resultado={resultado} simbolos={simbolos} deck={deck} concluido={concluido} setconcluido={aumentarconcluido} index={index} perguntaa={value.pergunta} resposta={value.resposta} />) })
 
     return (
         <>
@@ -41,7 +46,9 @@ function Perguntas(props) {
                     <div className='imagens_concluidas'>
                         <ImagensConcluidas simbolos={simbolos} />
                     </div>
-
+                    <div>
+                        {botao}
+                    </div>
                 </div>
             </div>
         </>

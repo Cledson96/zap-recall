@@ -6,6 +6,10 @@ import CardResposta from '../CardResposta/CardResposta'
 export default function AddPerguntas(props) {
     const {
         referencia,
+        meta,
+        setTela,
+        tela,
+        botao,
         img_resultado,
         resultado,
         concluido,
@@ -21,7 +25,7 @@ export default function AddPerguntas(props) {
             <div key={index} className='card'>
                 <CardVirado index={index} perguntaa={perguntaa} />
                 <CardPergunta index={index} perguntaa={perguntaa} />
-                <CardResposta index={index} referencia={referencia} img_resultado={img_resultado} resultado={resultado} simbolos={simbolos} deck={deck} setconcluido={setconcluido} concluido={concluido} respostaa={resposta} />
+                <CardResposta  meta={meta} setTela={setTela} tela={tela} botao={botao} index={index} referencia={referencia} img_resultado={img_resultado} resultado={resultado} simbolos={simbolos} deck={deck} setconcluido={setconcluido} concluido={concluido} respostaa={resposta} />
             </div>
         </>
     )

@@ -185,6 +185,23 @@ h1 {
 
 }
 
+input {
+  width: 246px;
+  height: 43px;
+  margin-bottom: 18px;
+  border-radius: 5px;
+
+}
+
+input::placeholder {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ADADAD
+}
+
 h4 {
   font-family: 'Recursive';
   font-style: normal;
@@ -203,6 +220,15 @@ h4 {
 
 .concluido img {
   margin-right: 7px;
+}
+
+.concluido button {
+  width: 167px;
+  height: 32px;
+  background: #FB6B6B;
+  border-radius: 5px;
+  color: white;
+  border-color: none;
 }
 
 .imgresultado img {
