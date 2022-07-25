@@ -1,0 +1,33 @@
+input {
+    padding-left: 10px;
+    width: 246px;
+    height: 43px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+
+}
+
+input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ADADAD
+}
+
+.inicio button {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #D70900;
+    width: 246px;
+    height: 54px;
+    background: #FFFFFF;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}

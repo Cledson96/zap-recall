@@ -1,0 +1,12 @@
+.card {
+    color: #333333;
+    padding: 13px;
+    width: 302px;
+    overflow-wrap: anywhere;
+    font-family: 'Recursive';
+    font-style: normal;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    background: #FFFFFF;
+    margin-bottom: 25px;
+  }

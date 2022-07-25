@@ -1,0 +1,41 @@
+.resposta {
+
+    flex-direction: column;
+}
+
+.respostas {
+    margin-top: 18px;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.respostas button {
+    width: 86px;
+    height: 38px;
+    border-radius: 5px;
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.respostas :nth-child(1) {
+    background: #FF3030;
+    border-radius: 5px;
+}
+
+.respostas :nth-child(2) {
+    background: #FF922E;
+    border-radius: 5px;
+}
+
+.respostas :nth-child(3) {
+    background: #2FBE34;
+    border-radius: 5px;
+}

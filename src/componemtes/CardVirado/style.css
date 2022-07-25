@@ -1,0 +1,12 @@
+.pergunta {
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  .pergunta img {
+    width: 20px;
+    height: 23px;
+  }

@@ -1,4 +1,5 @@
 import virar from '../img/virar.png';
+import "./style.css";
 
 export default function CardPergunta(props) {
    const {perguntaa} = props;

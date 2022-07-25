@@ -1,28 +1,20 @@
 import Logo from '../img/logo.png'
 import "./style.css";
 import React from 'react';
+import Metazap from '../Metazap/Metazap';
+import Escolhadeck from '../Escolhadeck/Escolhadeck';
 
-
-function Inicio(props) {
-    const { tela2, deck} = props;
+export default function Inicio(props) {
+    const { tela2, deck, setTela } = props;
     return (
         <>
             <div className='inicio'>
-                <img src={Logo} />
+                <img alt='' src={Logo} />
                 <h1>ZapRecall</h1>
-                <input type='number' placeholder='Digite sua meta de zaps...' />
-                <button onClick={() => {
-                    if (document.querySelector("input").value == '' || document.querySelector("input").value > deck.length || document.querySelector("input").value < 1) {
-                        alert("Obrigatorio definir a meta de zap! Sendo no minimo um acerto!");
-                    } else {
-                        let ref =document.querySelector("input").value
-                        tela2(ref);
-                    }
-
-                }}>Iniciar Recall!</button>
+                <Escolhadeck deck={deck} />
+                <Metazap deck={deck} setTela={setTela} tela2={tela2} />
             </div>
         </>
     )
 }
 
-export default Inicio;

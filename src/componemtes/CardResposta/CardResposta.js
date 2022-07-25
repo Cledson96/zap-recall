@@ -4,6 +4,7 @@ import duvida from '../img/duvida.png';
 import parabens from '../img/party.png';
 import triste from '../img/sad.png';
 import React from 'react';
+import "./style.css";
 
 
 export default function CardResposta(props) {
@@ -32,8 +33,7 @@ export default function CardResposta(props) {
             ref.parentNode.parentNode.parentNode.querySelector(".pergunta").classList.add("add_errado");
             ref.parentNode.parentNode.parentNode.querySelector(".pergunta").classList.remove("remove");
             simbolos.push(<img key={concluido} alt='' src={errou} />);
-            console.log(referencia)
-
+            
 
         } else if (ref.innerHTML === "Quase não lembrei") {
             ref.parentNode.parentNode.parentNode.querySelector("img").setAttribute('src', (duvida))
@@ -41,23 +41,20 @@ export default function CardResposta(props) {
             ref.parentNode.parentNode.parentNode.querySelector(".pergunta").classList.remove("remove");
             simbolos.push(<img key={concluido} alt='' src={duvida} />);
             referencia.push("1");
-            console.log(referencia)
-
+            
         } else {
             ref.parentNode.parentNode.parentNode.querySelector("img").setAttribute('src', (acertou))
             ref.parentNode.parentNode.parentNode.querySelector(".pergunta").classList.add("add_acertou");
             ref.parentNode.parentNode.parentNode.querySelector(".pergunta").classList.remove("remove");
             simbolos.push(<img key={concluido} alt='' src={acertou} />);
             referencia.push("2");
-            console.log(referencia)
-        }
+                    }
 
         ref.parentNode.parentNode.remove();
-        console.log(meta[0]);
-        console.log(referencia)
+       
         if (concluido === deck.length - 1) {
-            botao.push(<button onClick={() => { setTela(!tela) ;console.log(meta[0])}}>REINICIAR RECALL</button>);
-            if (referencia.length >= meta[0]) {
+            botao.push(<button onClick={() => { setTela(!tela) }}>REINICIAR RECALL</button>);
+            if (referencia.length >= meta) {
                 img_resultado.push(<img key={concluido} alt='' src={parabens} />)
                 img_resultado.push("Parabéns!")
                 resultado.push("Você Bateu sua meta!")

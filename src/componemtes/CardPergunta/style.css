@@ -1,0 +1,17 @@
+.perguntaVirada {
+    font-weight: 400;
+    position: relative;
+  }
+  
+  .perguntaVirada h4 {
+    margin-bottom: 35px;
+  }
+  
+  .perguntaVirada img {
+    width: 30px;
+    height: 20px;
+    right: 5px;
+    bottom: 6px;
+    position: absolute;
+    overflow-wrap: unset
+  }

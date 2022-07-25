@@ -14,9 +14,9 @@ function Perguntas(props) {
         deck
     } = props;
 
-   
+
     const [concluido, setconcluido] = React.useState(0);
-    const [resultado, setresultado] = React.useState([]);
+    const [resultado,setresultado] = React.useState([]);
     const [simbolos, setsimbolos] = React.useState([]);
     const [referencia, setreferencia] = React.useState([]);
     const [img_resultado, setimg_resultado] = React.useState([]);
@@ -27,13 +27,13 @@ function Perguntas(props) {
     }
 
     let pergunta = deck.length;
-    let renderizar = deck.map(function (value, index) { return (<AddPerguntas referencia={referencia} meta={meta} tela={tela} setTela={setTela} botao={botao} key={index} img_resultado={img_resultado} resultado={resultado} simbolos={simbolos} deck={deck} concluido={concluido} setconcluido={aumentarconcluido} index={index} perguntaa={value.pergunta} resposta={value.resposta} />) })
+    let renderizar = deck.map(function (value, index) { return (<AddPerguntas key ={index} setbotao = {setbotao} img = {setimg_resultado}referencia={referencia} setresultado ={setresultado} setreferencia = {setreferencia} setsimbolos={setsimbolos} meta={meta} tela={tela} setTela={setTela} botao={botao}  img_resultado={img_resultado} resultado={resultado} simbolos={simbolos} deck={deck} concluido={concluido} setconcluido={aumentarconcluido} index={index} perguntaa={value.pergunta} resposta={value.resposta} />) })
 
     return (
         <>
             <div className='perguntas'>
                 <div className="logo">
-                    <img src={logo} />
+                    <img alt='' src={logo} />
                     <h1>ZapRecall</h1>
                 </div>
                 {renderizar}

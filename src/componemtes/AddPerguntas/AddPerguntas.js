@@ -23,9 +23,9 @@ export default function AddPerguntas(props) {
     return (
         <>
             <div key={index} className='card'>
-                <CardVirado index={index} perguntaa={perguntaa} />
-                <CardPergunta index={index} perguntaa={perguntaa} />
-                <CardResposta  meta={meta} setTela={setTela} tela={tela} botao={botao} index={index} referencia={referencia} img_resultado={img_resultado} resultado={resultado} simbolos={simbolos} deck={deck} setconcluido={setconcluido} concluido={concluido} respostaa={resposta} />
+                <CardVirado  index={index} perguntaa={perguntaa} />
+                <CardPergunta  index={index} perguntaa={perguntaa} />
+                <CardResposta   meta={meta} setTela={setTela} tela={tela} botao={botao} index={index} referencia={referencia} img_resultado={img_resultado} resultado={resultado} simbolos={simbolos} deck={deck} setconcluido={setconcluido} concluido={concluido} respostaa={resposta} />
             </div>
         </>
     )
