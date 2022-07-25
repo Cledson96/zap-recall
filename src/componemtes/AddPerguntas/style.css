@@ -9,4 +9,10 @@
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     background: #FFFFFF;
     margin-bottom: 25px;
+    cursor: pointer;
+    transition: 500ms linear; 
   }
+  .card:hover {
+    transform: scale(1.1);
+  }
+  

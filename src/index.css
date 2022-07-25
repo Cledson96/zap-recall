@@ -21,13 +21,12 @@ h1 {
 
 .add {
   display: flex;
-}
+  transform: rotatex(360deg);
+  }
 
 .remove {
   display: none;
 }
-
-
 
 
 .add_errado {
@@ -47,9 +46,6 @@ h1 {
   text-decoration: line-through;
   color: #2FBE34;
 }
-
-
-
 
 
 .perguntas {
@@ -77,7 +73,6 @@ h1 {
 }
 
 
-
 .concluido {
   min-width: 100%;
   min-height: 70px;
@@ -97,26 +92,6 @@ h1 {
   line-height: 22px;
   color: #333333;
 
-}
-
-
-
-input {
-  padding-left: 10px;
-  width: 246px;
-  height: 43px;
-  margin-bottom: 18px;
-  border-radius: 5px;
-
-}
-
-input::placeholder {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ADADAD
 }
 
 h4 {

@@ -1,12 +1,22 @@
 .pergunta {
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-  }
-  
-  .pergunta img {
-    width: 20px;
-    height: 23px;
-  }
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+.pergunta :hover{
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.pergunta img {
+  width: 20px;
+  height: 23px;
+}
